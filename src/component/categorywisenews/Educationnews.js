@@ -33,7 +33,7 @@ const Educationnews = () => {
           className="text-4xl font-bold mb-8 text-white"
           style={{ textShadow: "0px 0px 10px red" }}
         >
-          ALL ENTERTAINMENT NEWS ...
+          ALL EDUCATION NEWS ...
         </h1>
         <ul className="flex flex-wrap gap-4">
           {allPostData.map((post) => (
