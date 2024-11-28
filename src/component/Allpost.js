@@ -9,7 +9,7 @@ const Allpost = () => {
     SanityClient.fetch(
       `*[ 
         _type == "post"  
-      ] | order(publishedAt desc)[0...6] {
+      ] | order(publishedAt desc)[0] {
         _id, 
         title, 
         category,
