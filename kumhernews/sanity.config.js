@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'kumher_NEWS',
 
-  projectId: '314mt2ok',
+  projectId: '9gicc135',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
