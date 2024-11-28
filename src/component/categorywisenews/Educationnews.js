@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 import SanityClient from "../../client";
 import React, { useEffect, useState } from "react";
 
-const Latestnews = () => {
+const Educationnews = () => {
   const [allPostData, setAllPostData] = useState([]);
 
   useEffect(() => {
     SanityClient.fetch(
       `*[ 
-        _type == "post"  
-      ] | order(publishedAt desc)[] {
+        _type == "post"  && category == 'education'
+      ] | order(publishedAt desc)[0...6] {
         _id, 
         title, 
         category,
@@ -33,7 +33,7 @@ const Latestnews = () => {
           className="text-4xl font-bold mb-8 text-white"
           style={{ textShadow: "0px 0px 10px red" }}
         >
-          ALL LATEST NEWS ...
+          ALL ENTERTAINMENT NEWS ...
         </h1>
         <ul className="flex flex-wrap gap-4">
           {allPostData.map((post) => (
@@ -61,4 +61,4 @@ const Latestnews = () => {
   );
 };
 
-export default Latestnews;
+export default Educationnews;

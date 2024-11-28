@@ -14,6 +14,7 @@ import Technologynews from './component/categorywisenews/Technologynews';
 import Healthnews from './component/categorywisenews/Healthnews';
 import Businessnews from './component/categorywisenews/bussinessnews';
 import Entertainmentnews from './component/categorywisenews/Entertainmentnews';
+import Educationnews from './component/categorywisenews/Educationnews';
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
       <Route path='/healthnews' element={<Healthnews/>} />
       <Route path='/businessnews' element={<Businessnews/>} />
       <Route path='/entertainmentnews' element={<Entertainmentnews/>} />
+      <Route path='/educationnews' element={<Educationnews/>} />
 
       {/* <Route path="/about" element={<About />} /> */}
     </Routes>

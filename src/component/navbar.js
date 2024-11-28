@@ -90,6 +90,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/educationnews" className="hover:text-gray-300 block">
+                  Education
+                </Link>
+              </li>
+              <li>
                 <Link to="/businessnews" className="hover:text-gray-300  block">
                   Business
                 </Link>
